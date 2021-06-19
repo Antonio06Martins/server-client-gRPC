@@ -17,7 +17,7 @@ class DemoService {
         val saveUserRequest = SaveUserRequest.newBuilder()
             .setName("Fernando")
             .setLastName("Queiroz")
-            .setDocument("07284650714")
+            .setDocument("00000000001")
             .build()
 
         val saveUserResponse = demoServerStub.saveUser(saveUserRequest)
@@ -48,19 +48,19 @@ class DemoService {
         val request1 = SaveUserRequest.newBuilder()
             .setName("Eduardo")
             .setLastName("Silva")
-            .setDocument("05262438594")
+            .setDocument("00000000002")
             .build()
 
         val request2 = SaveUserRequest.newBuilder()
             .setName("Carol")
             .setLastName("Souza")
-            .setDocument("07262438594")
+            .setDocument("00000000003")
             .build()
 
         val request3 = SaveUserRequest.newBuilder()
             .setName("Murilo")
             .setLastName("Oliveira")
-            .setDocument("09262438594")
+            .setDocument("00000000004")
             .build()
 
         val requests = listOf(request1, request2, request3)
